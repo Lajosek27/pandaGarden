@@ -38,7 +38,7 @@ class Is_imageslider extends Module implements WidgetInterface
 
         $this->displayName = 'Home slider module';
         $this->description = 'Home slider module';
-        // $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => _PS_VERSION_];
+        $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => _PS_VERSION_];
     }
 
     public function isUsingNewTranslationSystem(): bool
