@@ -42,7 +42,7 @@
 
                     <div class="row header-top__row">
 
-                        <div class="col flex-grow-0 header-top__block header-top__block--menu-toggle d-block d-md-none">
+                        <div class="col flex-grow-0 header-top__block header-top__block--menu-toggle d-block d-lg-none">
                             <a
                                     class="header-top__link"
                                     rel="nofollow"
@@ -56,7 +56,7 @@
                             </a>
                         </div>
 
-                        <div class="col-md-4 col header-top__block header-top__block--logo">
+                        <div class="col-md-2 col header-top__block header-top__block--logo">
                             <a href="{$urls.pages.index}">
                                 {images_block webpEnabled=$webpEnabled}
                                     <img
@@ -73,7 +73,10 @@
                             </a>
                         </div>
                         {hook h='displayNavFullWidth'}
-                        {hook h='displayTop'}
+                        <div class="header-icons-wrapper">
+                            {hook h='displayTop'}
+                        </div>
+                       
                     </div>
 
                 </div>
