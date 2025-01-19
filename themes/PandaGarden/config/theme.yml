@@ -35,6 +35,10 @@ assets:
         path: assets/css/_main.css
         media: all
         priority: 100
+  js:
+    all:
+      - id: swiper-vendor-js
+        path: assets/js/swipervendor.js
   
 
 theme_settings:
