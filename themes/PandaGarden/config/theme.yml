@@ -1,0 +1,49 @@
+name: PandaGarden
+display_name: PandaGarden
+author:
+  name: "Panda Coders"
+  email: "contact@pandacoders.com"
+  url: "https://www.pandacoders.com"
+version: 1.0.0
+responsive: true
+parent: falcon
+
+meta:
+  compatibility:
+      from: 8.0.0
+      to: ~
+
+  available_layouts:
+    layout-full-width:
+      name: Full Width
+      description: No side columns, ideal for distraction-free pages such as product pages.
+    layout-both-columns:
+      name: Three Columns
+      description: One large central column and 2 side columns.
+    layout-left-column:
+      name: Two Columns, small left column
+      description: Two columns with a small left column
+    layout-right-column:
+      name: Two Columns, small right column
+      description: Two columns with a small right column
+  
+assets:
+  use_parent_assets: false
+  css:
+    all:
+      - id: panda-custom-style
+        path: assets/css/_main.css
+        media: all
+        priority: 100
+  
+
+theme_settings:
+  default_layout: layout-full-width
+  layouts:
+    category: layout-left-column
+    best-sales: layout-left-column
+    new-products: layout-left-column
+    prices-drop: layout-left-column
+    contact: layout-left-column
+    module-pandastickerpage-stickers: layout-full-width
+    module-pandafeatures-configurator: layout-left-column
