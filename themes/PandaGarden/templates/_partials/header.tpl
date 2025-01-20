@@ -42,19 +42,7 @@
 
                     <div class="row header-top__row">
 
-                        <div class="col flex-grow-0 header-top__block header-top__block--menu-toggle d-block d-lg-none">
-                            <a
-                                    class="header-top__link"
-                                    rel="nofollow"
-                                    href="#"
-                                    data-toggle="modal"
-                                    data-target="#mobile_top_menu_wrapper"
-                            >
-                                <div class="header-top__icon-container">
-                                    <span class="header-top__icon material-icons">menu</span>
-                                </div>
-                            </a>
-                        </div>
+                       
 
                         <div class="col-md-2 col header-top__block header-top__block--logo">
                             <a href="{$urls.pages.index}">
@@ -75,6 +63,21 @@
                         {hook h='displayNavFullWidth'}
                         <div class="header-icons-wrapper">
                             {hook h='displayTop'}
+                            <div class="col flex-grow-0 header-top__block header-top__block--menu-toggle d-block d-lg-none">
+                                <a
+                                        class="header-top__link"
+                                        rel="nofollow"
+                                        href="#"
+                                        data-toggle="modal"
+                                        data-target="#mobile_top_menu_wrapper"
+                                >
+                                    <div class="header-top__icon-container">
+                                        <span class="header-top__icon "><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3 12H21M3 6H21M3 18H21" stroke="#1E1E1E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg></span>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                        
                     </div>
