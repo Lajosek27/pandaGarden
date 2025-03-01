@@ -46,7 +46,7 @@
             display: flex;
         }
 
-       
+
 
         // main menu desktop 
 
@@ -78,15 +78,7 @@
                     }
                 }
 
-                .navbar-toggler {
-                    padding: 0 0 0 5px;
-                    border: 0;
-                    cursor: pointer;
 
-                    i {
-                        margin-top: 4px;
-                    }
-                }
 
             }
 
@@ -114,8 +106,20 @@
                 }
             }
 
-            .header-top__icon {
+            &.header-top__block--cart .header-top__icon {
                 font-size: unset;
+            }
+
+            &.header-top__block--menu-toggle .header-top__icon {
+                color: $black;
+            }
+
+            &.header-top__block--fav {
+                display: none;
+
+                @include md {
+                    display: flex;
+                }
             }
 
             .header-top__badge {
@@ -128,6 +132,18 @@
                 align-items: center;
                 right: -12px;
                 background-color: $main-blue;
+            }
+
+            &.header-top__block--menu-toggle {
+                svg {
+                    width: 30px;
+                    height: 30px;
+                    margin-bottom: 5px;
+                }
+            }
+
+            &.header-top__block--logo {
+                padding: 0;
             }
         }
 
@@ -160,8 +176,8 @@
         }
 
 
-         // header sticky
-         .header-top.is-sticky {
+        // header sticky
+        .header-top.is-sticky {
             .header-top__content {
                 padding-top: 0px !important;
                 padding-bottom: 0px !important;
