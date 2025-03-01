@@ -286,11 +286,19 @@ body {
 }
 
 #category-section .intro-text .container h2 {
-  line-height: 140%;
+  line-height: 120%;
   letter-spacing: 3px;
-  font-size: 28px;
+  font-size: 22px;
   text-transform: uppercase;
   font-weight: 600;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #category-section .intro-text .container h2 {
+    font-size: 28px;
+    line-height: 140%;
+  }
 }
 
 #category-section .intro-text .container h2 span {
@@ -299,20 +307,33 @@ body {
 
 #category-section .intro-text .container h2::after {
   height: 2px;
-  width: 65%;
+  width: 40%;
   content: '';
   background-color: #629460;
   display: block;
   margin: 10px auto;
 }
 
+@media (min-width: 768px) {
+  #category-section .intro-text .container h2::after {
+    width: 65%;
+  }
+}
+
 #category-section .intro-text .container .text {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 150%;
   text-align: center;
   color: #020202;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  #category-section .intro-text .container .text {
+    font-size: 16px;
+    width: 70%;
+  }
 }
 
 #category-section .categories-wrapper {
@@ -323,7 +344,7 @@ body {
 
 #category-section .categories-wrapper .category-link {
   text-decoration: none;
-  width: 40%;
+  width: 90%;
   display: block;
   margin-bottom: 30px;
   background-color: #F7F7F7;
@@ -334,6 +355,18 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
+@media (min-width: 768px) {
+  #category-section .categories-wrapper .category-link {
+    width: 45%;
+  }
+}
+
+@media (min-width: 992px) {
+  #category-section .categories-wrapper .category-link {
+    width: 40%;
+  }
+}
+
 #category-section .categories-wrapper .category-link .category-item {
   display: flex;
   justify-content: space-between;
@@ -341,12 +374,20 @@ body {
   height: 100%;
 }
 
-#category-section .categories-wrapper .category-link .category-item .icon-wrapper {
-  margin-left: 20px;
+@media (min-width: 992px) {
+  #category-section .categories-wrapper .category-link .category-item .icon-wrapper {
+    margin-left: 20px;
+  }
 }
 
 #category-section .categories-wrapper .category-link .category-item .icon-wrapper img {
-  width: 65px;
+  width: 55px;
+}
+
+@media (min-width: 992px) {
+  #category-section .categories-wrapper .category-link .category-item .icon-wrapper img {
+    width: 65px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -356,23 +397,35 @@ body {
 }
 
 #category-section .categories-wrapper .category-link .category-item .cat-image-wrapper img {
-  max-width: 110px;
+  max-width: 75px;
   filter: opacity(0.3);
   -webkit-filter: opacity(0.3);
   -moz-filter: opacity(0.3);
 }
 
+@media (min-width: 992px) {
+  #category-section .categories-wrapper .category-link .category-item .cat-image-wrapper img {
+    max-width: 110px;
+  }
+}
+
 #category-section .categories-wrapper .category-link .category-item .cat-name-wrapper h3 {
   margin-bottom: 0;
-  font-size: 20px;
+  font-size: 18px;
   color: #629460;
   font-weight: 800;
-  line-height: 28px;
+  line-height: 24px;
   letter-spacing: 1px;
   text-transform: uppercase;
   text-align: center;
   width: 80%;
   margin: auto;
+}
+
+@media (min-width: 992px) {
+  #category-section .categories-wrapper .category-link .category-item .cat-name-wrapper h3 {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -384,7 +437,13 @@ body {
 }
 
 #category-section .categories-wrapper .category-link:hover {
-  width: 50%;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #category-section .categories-wrapper .category-link:hover {
+    width: 50%;
+  }
 }
 
 #category-section .categories-wrapper .category-link:hover .cat-image-wrapper img {
@@ -401,18 +460,18 @@ body {
   color: #266DD3;
 }
 
-#category-section .categories-wrapper .category-link:nth-child(even) {
-  position: absolute;
-  right: 0;
-  margin-top: -80px;
-  border-radius: 25px 0 0 25px;
-}
-
-#category-section .categories-wrapper .category-link:nth-child(even) .category-item {
-  flex-direction: row-reverse;
-}
-
-#category-section .categories-wrapper .category-link:nth-child(even) .category-item .icon-wrapper {
-  margin-left: 0px;
-  margin-right: 20px;
+@media (min-width: 768px) {
+  #category-section .categories-wrapper .category-link:nth-child(even) {
+    position: absolute;
+    right: 0;
+    margin-top: -80px;
+    border-radius: 25px 0 0 25px;
+  }
+  #category-section .categories-wrapper .category-link:nth-child(even) .category-item {
+    flex-direction: row-reverse;
+  }
+  #category-section .categories-wrapper .category-link:nth-child(even) .category-item .icon-wrapper {
+    margin-left: 0px;
+    margin-right: 20px;
+  }
 }
