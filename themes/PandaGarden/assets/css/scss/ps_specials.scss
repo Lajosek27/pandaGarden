@@ -1,0 +1,30 @@
+.ps_specials {
+    .container-section {
+        display: flex;
+
+        .banner-wrapper {
+            width: 25%;
+        }
+        .featured-products {
+            width: 75%;
+
+            .product-slider__item {
+                @include lg {
+                    flex: 0 0 20%;
+                     max-width: 20%;
+                }
+            }
+        }
+    }
+}
+
+.product-miniature {
+    border: none;
+
+    .product-miniature__thumb {
+        img.img-fluid {
+            background-color: $seasalt-gray;
+            border-radius: 16px !important;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.ps_specials .container-section {
+  display: flex;
+}
+
+.ps_specials .container-section .banner-wrapper {
+  width: 25%;
+}
+
+.ps_specials .container-section .featured-products {
+  width: 75%;
+}
