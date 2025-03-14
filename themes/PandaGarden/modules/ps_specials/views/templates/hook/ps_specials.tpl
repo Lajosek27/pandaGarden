@@ -64,6 +64,9 @@
                 'slidesPerView' => 3
                 ],
                 '992' => [
+                'slidesPerView' => 3
+                ],
+                '1200' => [
                 'slidesPerView' => 5
                 ]
                 ]
