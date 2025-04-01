@@ -765,3 +765,139 @@ body {
   font-weight: 400;
   color: #020202;
 }
+
+.bestsellers-section {
+  margin-bottom: 50px;
+}
+
+.bestsellers-section h1 {
+  line-height: 120%;
+  letter-spacing: 3px;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .bestsellers-section h1 {
+    font-size: 28px;
+    line-height: 140%;
+  }
+}
+
+.bestsellers-section h1 span {
+  color: #266DD3;
+}
+
+.bestsellers-section h1::after {
+  height: 2px;
+  width: 20%;
+  content: '';
+  background-color: #629460;
+  display: block;
+  margin: 10px auto;
+}
+
+@media (min-width: 768px) {
+  .bestsellers-section h1::after {
+    width: 10%;
+  }
+}
+
+.bestsellers-section .container-section {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .bestsellers-section .container-section {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .bestsellers-section .container-section .banner-wrapper {
+    width: 25%;
+  }
+}
+
+@media (min-width: 768px) {
+  .bestsellers-section .container-section .featured-products {
+    width: 75%;
+  }
+}
+
+.bestsellers-section .banner-wrapper {
+  margin: 20px 50px 0 50px;
+  background-image: url(../img/sauna-promo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  height: 330px;
+}
+
+@media (min-width: 768px) {
+  .bestsellers-section .banner-wrapper {
+    margin: 25px;
+    height: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .bestsellers-section .banner-wrapper {
+    margin: 50px;
+    height: auto;
+  }
+}
+
+.bestsellers-section .banner-wrapper a {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.bestsellers-section .banner-wrapper a h3 {
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 20px 10px 5px 10px;
+  font-size: 24px;
+  letter-spacing: 1px;
+  line-height: 140%;
+}
+
+@media (min-width: 768px) {
+  .bestsellers-section .banner-wrapper a h3 {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+}
+
+.bestsellers-section .banner-wrapper a p {
+  color: #fff;
+  line-height: 140%;
+  font-size: 20px;
+  font-weight: 600;
+  width: 80%;
+}
+
+.bestsellers-section .banner-wrapper a:hover {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .bestsellers-section .featured-products {
+    margin-left: -50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .bestsellers-section .featured-products {
+    margin-left: 0;
+  }
+}
