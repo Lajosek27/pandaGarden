@@ -1,0 +1,217 @@
+#aboutus {
+    position: relative;
+    margin-bottom: 60px;
+
+    @include md {
+        margin-bottom: 210px;
+    }
+
+    @include lg {
+        margin-bottom: 150px;
+    }
+
+    .gradient {
+        display: none;
+
+        @include md {
+            display: block;
+            background: linear-gradient(#266DD3 0%, #0D4698 100%);
+            width: 250px;
+            height: 475px;
+            position: absolute;
+            top: 60px;
+            left: 0px;
+            z-index: 0;
+            border-radius: 0px 10px 10px 0px;
+        }
+
+
+
+
+        @include lg {
+            height: 600px;
+        }
+    }
+
+    .img-wrapper {
+        width: 100%;
+        height: 100%;
+        display: none;
+
+        @include md {
+            width: 50%;
+            height: 100%;
+            display: block;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            z-index: 1;
+            position: relative;
+            max-height: 600px;
+        }
+    }
+
+    .container {
+        display: flex;
+        position: relative;
+    }
+
+    .text-wrapper {
+        width: 100%;
+
+
+        background-color: #fff;
+
+        border-radius: 10px;
+        z-index: 2;
+
+        @include md {
+            width: 55%;
+            position: absolute;
+            left: 43%;
+            top: 40px;
+            padding: 30px 0 75px 20px;
+
+        }
+
+        @include lg {
+            padding: 60px 0 75px 40px;
+        }
+
+        h2 {
+            line-height: 120%;
+            letter-spacing: 3px;
+            font-size: 22px;
+            text-transform: uppercase;
+            font-weight: 600;
+
+
+            @include lg {
+                font-size: 28px;
+                line-height: 140%;
+            }
+
+
+            span {
+                color: $main-blue;
+            }
+
+            &::after {
+                height: 2px;
+                width: 40%;
+                content: '';
+                background-color: #629460;
+                display: block;
+                margin: 10px auto;
+
+                @include md {
+                    width: 65%;
+                }
+            }
+        }
+
+        .text {
+
+            font-size: 14px;
+            line-height: 150%;
+
+            color: $black;
+
+
+            @include md {
+                font-size: 14px;
+
+            }
+
+            @include lg {
+                font-size: 16px;
+            }
+
+            span {
+                display: block;
+                margin-bottom: 8px;
+
+                @include md {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        .btn-wrapper {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+
+            @include md {
+                justify-content: flex-start;
+            }
+
+            .btn-primary {
+                color: #fff;
+                background-color: $main-blue;
+                border-radius: 10px;
+                font-size: 14px;
+                border: none;
+                padding: 10px 25px;
+                margin: auto;
+
+                @include md {
+                    font-size: 16px;
+                    margin: 0;
+                }
+
+                &:hover,
+                &:focus {
+                    background-color: $black;
+                    outline: none;
+                    box-shadow: none;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+#icons-strenght {
+    margin-bottom: 40px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @include md {
+            flex-direction: row;
+        }
+
+        .box-icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+
+
+
+            img {
+                width: 80px;
+                margin-bottom: 20px;
+            }
+
+            .text {
+                width: 50%;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 600;
+
+                @include md {
+                    width: 75%;
+                }
+            }
+        }
+    }
+}
