@@ -1135,3 +1135,45 @@ body {
     width: 75%;
   }
 }
+
+.newslettr-container {
+  padding: 40px 0;
+  background: linear-gradient(90deg, #629460 0%, #78B976 100%);
+}
+
+.newslettr-container #block-newsletter-label {
+  color: #fff;
+  font-size: 16px;
+}
+
+.newslettr-container form .input-group .form-control {
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+}
+
+.newslettr-container form .input-group .form-control::placeholder {
+  color: #b3b3b3;
+}
+
+.newslettr-container form .input-group .form-control:hover, .newslettr-container form .input-group .form-control:focus {
+  box-shadow: none;
+}
+
+.newslettr-container form .input-group .btn-primary {
+  background-color: #020202;
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+  border: none;
+}
+
+.newslettr-container form .input-group .btn-primary:focus, .newslettr-container form .input-group .btn-primary:hover, .newslettr-container form .input-group .btn-primary:active {
+  box-shadow: none;
+  background-color: #266DD3;
+  color: #fff;
+}
+
+.newslettr-container .form-text {
+  color: #fff !important;
+  font-size: 13px;
+}
