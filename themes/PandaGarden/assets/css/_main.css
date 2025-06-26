@@ -1177,3 +1177,29 @@ body {
   color: #fff !important;
   font-size: 13px;
 }
+
+.footer-container {
+  margin-top: 0;
+  background-color: #020202;
+}
+
+.footer-container span.h4 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.footer-container .links-list__link {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-container .links-list__link:hover {
+  color: #266DD3;
+}
+
+.footer-container .material-icons {
+  color: #fff;
+}

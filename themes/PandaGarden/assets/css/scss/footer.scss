@@ -42,3 +42,29 @@
         font-size: 13px;
     }
 }
+
+.footer-container {
+    margin-top: 0;
+    background-color: $black;
+
+    span.h4 {
+        color: $white;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    
+    .links-list__link {
+        color: $white;
+        font-size: 14px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $main-blue;
+        }
+    }
+
+    .material-icons { color: $white; } 
+
+ 
+}
