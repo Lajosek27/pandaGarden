@@ -59,8 +59,12 @@
 
     .categories-wrapper {
         margin: 40px 0;
-        height: 450px;
+      
         position: relative;
+
+        @include md {
+            height: 450px;
+        }
 
         .category-link {
             text-decoration: none;
