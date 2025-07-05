@@ -1,0 +1,14 @@
+#aboutus {
+  position: relative;
+}
+
+#aboutus .gradient {
+  background: linear-gradient(#266DD3 0%, #0D4698 100%);
+  width: 250px;
+  height: 550px;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  z-index: 0;
+  border-radius: 0px 10px 10px 0px;
+}
