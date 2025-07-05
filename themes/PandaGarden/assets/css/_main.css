@@ -3,6 +3,14 @@ body {
   font-family: "Montserrat", serif;
 }
 
+body #wrapper {
+  margin-top: 40px;
+}
+
+body#index #wrapper {
+  margin-top: 0;
+}
+
 #header {
   margin-bottom: 0;
 }
@@ -313,6 +321,19 @@ body {
 .button-86:active::after {
   transition: 0s;
   transform: translate(0, 5%);
+}
+
+.breadcrumb {
+  background-color: transparent;
+}
+
+.breadcrumb .breadcrumb-item a {
+  color: #020202;
+  text-decoration: none;
+}
+
+.breadcrumb .breadcrumb-item a:hover {
+  color: #266DD3;
 }
 
 #category-section {

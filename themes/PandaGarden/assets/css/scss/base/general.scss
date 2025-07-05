@@ -1,0 +1,14 @@
+body {
+    background-color: $white;
+    font-family: "Montserrat", serif;
+
+    #wrapper {
+      margin-top: 40px;
+    }
+
+    &#index {
+      #wrapper {
+        margin-top: 0;
+      }
+    }
+  }
